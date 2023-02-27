@@ -21,10 +21,10 @@ let connectOptions: mongoose.ConnectOptions = {
 if (process.env.NODE_ENV === "production") {
   connectOptions = {
     ...connectOptions,
-    sslValidate: false,
-    ssl: false,
-    authSource: "admin",
-    directConnection: true,
+    // sslValidate: false,
+    // ssl: false,
+    // authSource: "admin",
+    // directConnection: false,
   };
 }
 
