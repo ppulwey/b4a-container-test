@@ -1,5 +1,6 @@
 FROM node:18-alpine
 ENV PORT 3000
+ENV NODE_ENV production
 WORKDIR /app
 COPY . /app/
 RUN npm install
