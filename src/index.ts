@@ -10,6 +10,10 @@ app.get("/", (req: Request, res: Response, next: NextFunction) => {
   res.send("Hello World aa!");
 });
 
+app.get("/test", (req: Request, res: Response, next: NextFunction) => {
+  res.send("You just hit the test route!");
+});
+
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
