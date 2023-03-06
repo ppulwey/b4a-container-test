@@ -11,7 +11,7 @@ const dbConnectionString =
     : "mongodb://localhost:27017/b4a-test";
 
 const app: Express = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3333;
 
 app.use(express.json());
 let connectOptions: mongoose.ConnectOptions = {
