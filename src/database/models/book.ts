@@ -11,7 +11,7 @@ export class Book {
   publicationDate!: Date;
 
   @prop({ type: () => String })
-  summary?: string;
+  summary: string;
 }
 
 export const BookModel = getModelForClass(Book);
